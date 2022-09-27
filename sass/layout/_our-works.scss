@@ -1,0 +1,42 @@
+.our-works {
+    padding-top: 0;
+}
+
+.our-works-list {
+    display: flex;
+}
+
+.our-works-list-item {
+    position: relative;
+    width: 370px;
+
+    &:not(:last-child) {
+        margin-right: 30px;
+    }
+
+    &__title {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 70px;
+        color: var(--ws-white);
+        background-color: var(--ws-section-bg-dark);
+        opacity: 0.8;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        text-transform: uppercase;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 1.17;
+    }
+}
+
+@media (max-width: 1199px) {
+    .our-works {
+        display:none;
+    }
+}

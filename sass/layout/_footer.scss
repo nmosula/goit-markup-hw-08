@@ -1,0 +1,253 @@
+.footer {
+    background-color: var(--ws-section-bg-dark);
+    padding: 60px 0;
+}
+
+.footer-pages {
+    display: flex;
+    align-items: baseline;
+}
+
+.footer-address {
+    width: 230px;
+    margin-right: 70px;
+}
+
+.footer-logo {
+    display: block;
+    margin-bottom: 20px;
+    font-family: var(--ws-font-raleway);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.2;
+    letter-spacing: 0.03em;
+    color: var(--ws-blue);
+    text-decoration: none;
+
+    span {
+            color: var(--ws-white);
+    }
+}
+
+
+.footer-contact {
+    list-style: none;
+
+    li:not(:last-child) {
+        margin-bottom: 9px;
+    }
+}
+
+
+.footer-contact-link {
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    color: rgba(255, 255, 255, 0.6);
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        color: var(--ws-blue);
+    }
+}
+
+.footer-contact-map {
+    color: var(--ws-white);
+}
+
+
+.footer-social-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--ws-white);
+    margin-bottom: 20px;
+}
+
+.footer-social-links {
+    display: flex;
+    list-style: none;
+
+    li:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.footer-social-links .social-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    border: none;
+    fill: var(--ws-white);
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        fill: var(--ws-white);
+        background-color: var(--ws-blue);
+    }
+}
+
+
+
+.footer-subscribe {
+    margin-left: 93px;
+}
+
+.footer-subscribe-title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--ws-white);
+    margin-bottom: 20px;
+}
+
+.frm-subscribe {
+    display: flex;
+}
+
+.frm-subscribe-label {
+    margin-right: 12px;
+}
+
+.frm-input {
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--ws-white);
+    opacity: 0.6;
+    background-color: inherit;
+    min-width: 358px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+    border-radius: 4px;
+}
+
+
+.frm-submit {
+
+    padding: 10px 28px;
+    width: 200px;
+    height: 50px;
+    background: var(--ws-blue);
+    color: var(--ws-white);
+    border: 0;
+
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1, 875;
+
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+
+    cursor: pointer;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+        background: var(--ws-button-hover);
+    }
+}
+
+.footer-subscribe .icon-send {
+    fill: currentColor;
+    margin-left: 10px;
+}
+
+@media screen and (max-width: 767px) {
+    .footer-pages {
+        flex-direction: column;
+        align-items: center;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .footer-address {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .footer-logo {
+        font-size: 24px;
+        line-height: 1.174;
+    }
+
+    .footer-contact {
+        li:not(:last-child) {
+            margin-bottom: 8px;
+        }
+    }
+
+    .footer-social {
+        margin-bottom: 60px;
+    }
+
+    .footer-subscribe {
+        margin-left: 0;
+    }
+
+    .frm-subscribe {
+        flex-direction: column;
+        align-items: center;
+        // outline: 1px #ebebeb solid;
+    }
+
+    .frm-subscribe-label {
+        margin-right: 0;
+    }
+
+    .frm-input {
+        margin-bottom: 20px;
+    }
+}
+
+
+@media (min-width: 768px) and (max-width: 1199px) {
+    .footer-pages {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .footer-address {
+        margin-right: 0;
+        margin-bottom: 60px;
+    }
+
+    .footer-subscribe {
+        margin-left: 0;
+        display: block
+    }
+
+    .frm-subscribe {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .frm-subscribe-label {
+        margin-right: 0;
+    }
+
+    .frm-input {
+        margin-bottom: 20px;
+        min-width: 450px;
+    }
+}

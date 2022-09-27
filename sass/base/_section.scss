@@ -1,0 +1,24 @@
+.section {
+    padding: 94px 0;
+
+    &__title {
+            font-style: normal;
+            font-weight: 700;
+            font-size: 36px;
+            margin-bottom: 50px;
+            text-align: center;
+            color: var(--ws-darkgrey);
+        }
+}
+
+@media (max-width: 1199px) {
+    .section {
+        padding: 60px 0;
+        &__title {
+            font-size: 28px;
+            line-height: 1.172;
+            margin-bottom: 30px;
+        }
+    }
+
+}
