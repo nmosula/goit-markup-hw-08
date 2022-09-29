@@ -207,7 +207,6 @@
     .frm-subscribe {
         flex-direction: column;
         align-items: center;
-        // outline: 1px #ebebeb solid;
     }
 
     .frm-subscribe-label {
@@ -216,6 +215,8 @@
 
     .frm-input {
         margin-bottom: 20px;
+        width: 100%;
+        min-width: 450px;
     }
 }
 

@@ -22,6 +22,7 @@ screen and (min-resolution: 2dppx) {
     text-align: center;
     width: 360px;
     margin: 0 auto;
+    padding: 0;
 
     &__title {
         font-weight: 900;
@@ -60,7 +61,7 @@ screen and (min-resolution: 2dppx) {
  @media screen and (min-width: 1200px) {
     .hero-section {
         margin: 0 auto;
-        padding: 200px 0;
+        padding: 200px 15px;
         max-width: 1600px;
     }
 

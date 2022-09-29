@@ -131,8 +131,12 @@
 }
 
 
-.modal-form-policy-link {
+.modal-form-policy {
+    font-size: 12px;
+    line-height: 1.16;
+}
 
+.modal-form-policy-link {
 
         position: relative;
         color: var(--ws-blue);
@@ -140,7 +144,7 @@
         &::after {
             content: '';
             position: absolute;
-            bottom: 4px;
+            bottom: 0;
             left: 0;
             width: 100%;
             height: 1px;
@@ -171,5 +175,12 @@
     &:hover,
     &:focus {
         background: var(--ws-button-hover);
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal-form-policy {
+        font-size: 14px;
+        line-height: 1.71;
     }
 }

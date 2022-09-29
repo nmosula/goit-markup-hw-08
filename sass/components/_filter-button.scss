@@ -7,8 +7,6 @@
 
 .filter-buttons {
     display: flex;
-    margin-bottom: 50px;
-    justify-content: center;
 
     &-item:not(:last-child) {
         margin-right: 8px;
@@ -45,7 +43,7 @@
     @extend %filter-current-button;
 }
 
-@media (max-width: 767px) {
+@media screen and (min-width: 320px) {
     .filter-buttons {
         flex-wrap: wrap;
         justify-content:flex-start;
@@ -53,5 +51,18 @@
 
     .filter-button {
         margin-bottom: 15px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .filter-buttons {
+        margin-bottom: 40px;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .filter-buttons {
+        margin-bottom: 50px;
     }
 }
