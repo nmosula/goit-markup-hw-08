@@ -425,15 +425,17 @@ button {
   .filter-buttons {
     flex-wrap: wrap;
     justify-content: flex-start;
+    margin-bottom: 40px;
+    padding-right: 15px;
   }
-  .filter-button {
+  .filter-buttons-item {
     margin-bottom: 15px;
   }
 }
 @media screen and (min-width: 768px) {
   .filter-buttons {
-    margin-bottom: 40px;
     justify-content: center;
+    padding-right: 0;
   }
 }
 @media screen and (min-width: 1200px) {
