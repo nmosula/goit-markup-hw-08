@@ -48,7 +48,7 @@
         flex-wrap: wrap;
         justify-content:flex-start;
         margin-bottom: 40px;
-        padding-right: 15px;
+        margin-right: 15px;
     }
 
     .filter-buttons-item {
@@ -59,7 +59,7 @@
 @media screen and (min-width: 768px) {
     .filter-buttons {
         justify-content: center;
-        padding-right: 0;
+        margin-right: 0;
     }
 }
 
